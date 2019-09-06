@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+
+    <style>
+        #qform{
+            display: none
+        }
+
+    .active{
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center">Roots of Equation!!!</h1>
+    <div style="text-align: center">
+            <label > Number of degrees :</label>
+    
+            <select onchange="degree()" id="deg" style="width: 75px;">
+                    <option value=""  selected >Choose here</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+            </select>
+    </div>
+    <form id="qform" style="text-align: center">
+  
+           <label id="label"></label>
+            <!-- <label > Constants for ax <sup>2</sup> + bx + c=0 </label> -->
+            <input placeholder="a" id="a" type="number" autofocus>
+            <input placeholder="b" id="b" type="number">
+            <input placeholder="c" id="c" type="number">
+
+        <input  type="submit" >
+    </form>
+    <p id="root" style="text-align: center"></p>
+    
+</body>
+<script src="script.js"></script>
+</html>
